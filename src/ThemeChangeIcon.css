@@ -1,0 +1,29 @@
+.day-night {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    border-width: 0;
+    border-color: inherit;
+    outline: none;
+    padding: 0;
+    fill: #242424;
+    z-index: 1;
+}
+
+.dark .day-night:hover .mid-sun{
+    fill-opacity: 0;
+    stroke: #000;
+}
+
+.light .day-night:hover .mid-sun, .dark .mid-sun{
+    fill-opacity: 1;
+    stroke: #242424;
+}
+
+.dark .sunlight, .light .day-night:hover .sunlight {
+    opacity: 0;
+}
+
+.dark .day-night:hover .sunlight {
+    opacity: 1;
+}

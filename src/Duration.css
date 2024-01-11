@@ -1,0 +1,9 @@
+tr:nth-child(even) td:nth-child(odd) {
+    width: 1.2em;
+    text-align: right;
+    padding-right: 5px;
+}
+
+tr:nth-child(even) {
+    border-bottom: 1px solid black;
+}
